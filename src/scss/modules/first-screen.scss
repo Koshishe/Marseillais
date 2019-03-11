@@ -71,7 +71,7 @@
   &__pag {
     position: absolute;
     bottom: 30px;
-    left: 88px;
+    left: 81px;
     display: flex;
   }
 
@@ -81,25 +81,31 @@
     left: 0;
     bottom: 0;
     right: 0;
-    padding: 60px 91px;
     color: white;
+    padding: 150px 50px;
+  
+    @include low-desktop() {
+      padding: 71px 79px;
+    }
   }
 
   &__title {
     max-width: 710px;
     font-size: 75px;
-    line-height: 1.1;
+    line-height: 79px;
   }
 
   &__subtitle {
     font-size: 29px;
-    padding-top: 33px;
+    padding-top: 29px;
+    letter-spacing: 0.4px;
   }
 
   &__text {
     font-size: 20px;
-    padding-top: 18px;
-    max-width: 300px;
+    padding-top: 17px;
+    max-width: 310px;
+    letter-spacing: 0.2px;
 
     sup {
       font-size: 18px;

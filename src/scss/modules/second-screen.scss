@@ -1,13 +1,18 @@
 .second-screen {
+  position: relative;
 
   &__title {
     font-size: 37px;
-    font-weight: bold;
     text-align: center;
-    max-width: 750px;
+    max-width: 720px;
     margin: 0 auto;
     color: #000;
     padding-top: 76px;
+    letter-spacing: 0.5px;
+    
+    sup {
+      font-size: 22px;
+    }
   }
 
   &__subtitle {
@@ -16,35 +21,87 @@
     max-width: 710px;
     text-align: center;
     line-height: 1.5;
+    padding-top: 22px;
     color: #000;
   }
 
   &__product {
     position: relative;
     width: 100%;
-    background-position: right center;
+    background-position: right bottom;
     min-height: 632px;
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    padding: 60px 77px;
+    padding-top: 77px;
+  }
+  
+  &__prod-present {
+    position: relative;
+    min-width: 50%;
+  }
+  
+  &__bg-border {
+    width: 738px;
+    height: 498px;
+    border: 20px solid #ffd89d;
+    position: absolute;
+    top: 74px;
+    left: 56px;
+  }
+  
+  &__apircot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  
+  &__cream {
+    position: absolute;
+    z-index: 2;
+    top: 173px;
+    right: -18px;
   }
 
   &__atr1,
   &__atr2 {
     position: absolute;
-    background-size: contain
+    background-size: contain;
+    z-index: 5;
   }
 
   &__atr1 {
     @include aspect-ratio(186,259);
     left: 0;
     width: 186px;
-    top: 20px;
+    top: 564px;
   }
 
   &__atr2 {
     @include aspect-ratio(278,299);
     right: 0;
     width: 278px;
-    top: 10px;
+    top: 193px;
   }
-
-
+  
+  &__descr {
+    padding: 180px 72px;
+    z-index: 1;
+  }
+  
+  &__prod-title {
+    color: #000;
+    font-size: 70px;
+    line-height: 77px;
+    letter-spacing: 3px;
+  }
+  
+  &__prod-text {
+    color: #000;
+    padding-top: 21px;
+    letter-spacing: 0.5px;
+    line-height: 27px;
+  }
 }

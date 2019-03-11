@@ -1,5 +1,7 @@
-@include font-face('Arial', '../fonts/Arial/Arial', 400, italic);
-@include font-face('Arial', '../fonts/Arial/Arial-Bold', bold);
+@include font-face('Roboto', '../fonts/Roboto-Regular', 400);
+@include font-face('Roboto', '../fonts/Roboto-Bold', 700);
+@include font-face('Roboto', '../fonts/Roboto-Medium', 500);
+@include font-face('Roboto', '../fonts/Roboto-Light', 300);
 
 
 
