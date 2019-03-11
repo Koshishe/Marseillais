@@ -3,8 +3,8 @@ import Swiper from 'Swiper';
 
 export default {
   init() {
-    this.sliderExample();
-    this.handlers();
+    this.slider();
+    // this.handlers();
   },
 
 
@@ -13,8 +13,8 @@ export default {
   },
 
 
-  sliderExample() {
-    const name = 'js-example-slider';
+  slider() {
+    const name = 'js-slider';
     const classes = {
       block: name + '-block',
       slider: name,
@@ -42,14 +42,10 @@ export default {
       }
 
       new Swiper(slider, {
-        slidesPerView: 3, // 'auto'
-        spaceBetween: 30,
+        slidesPerView: 1, // 'auto'
         centeredSlides: false,
-        loop: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false
-        },
+        loop: false,
+        autoplay: false,
         grabCursor: false,
         wrapperClass: classes.wrapper,
         slideClass: classes.slide,
@@ -61,7 +57,7 @@ export default {
         pagination: {
           el: pagination,
           type: 'bullets',
-          clickable: true,
+          clickable: true
         },
 
         breakpoints: {

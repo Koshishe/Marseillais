@@ -1,0 +1,50 @@
+.second-screen {
+
+  &__title {
+    font-size: 37px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
+    color: #000;
+    padding-top: 76px;
+  }
+
+  &__subtitle {
+    margin: 0 auto;
+    font-size: 19px;
+    max-width: 710px;
+    text-align: center;
+    line-height: 1.5;
+    color: #000;
+  }
+
+  &__product {
+    position: relative;
+    width: 100%;
+    background-position: right center;
+    min-height: 632px;
+  }
+
+  &__atr1,
+  &__atr2 {
+    position: absolute;
+    background-size: contain
+  }
+
+  &__atr1 {
+    @include aspect-ratio(186,259);
+    left: 0;
+    width: 186px;
+    top: 20px;
+  }
+
+  &__atr2 {
+    @include aspect-ratio(278,299);
+    right: 0;
+    width: 278px;
+    top: 10px;
+  }
+
+
+}
