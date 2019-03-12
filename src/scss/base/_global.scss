@@ -13,6 +13,7 @@ body {
   color: $text-base;
   background: $bg-main;
   text-rendering: geometricPrecision;
+  user-select: none;
 }
 
 ::selection {

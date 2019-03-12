@@ -1,0 +1,93 @@
+@import "../base/includes";
+
+.fifth-screen {
+  
+  &__hash {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 73px;
+    padding: 46px 0 65px;
+    color: #e83f62;
+    background-color: #fddaac;
+    
+    svg {
+      margin-right: 20px;
+    }
+  }
+  
+  &__insta {
+    background-image: url('../img/bg-decor2.png');
+    background-color: #fff;
+    width: 100%;
+    min-height: 234px;
+    background-size: contain;
+  }
+  
+  &__insta-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  &__photo {
+    flex: 0 0 auto;
+    background-size: cover;
+    flex-basis: 349px;
+    min-height: 349px;
+    margin: 0 15px;
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+  
+    &:hover {
+      .fifth-screen__insta-info {
+        transform: translateY(0);
+      }
+    }
+  }
+  
+  &__insta-info {
+    display: flex;
+    flex-direction: row;
+    padding: 150px 25px 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .6));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    transition: .5s ease;
+    transform: translateY(85px);
+  }
+  
+  &__login{
+    margin-left: 15px;
+    font-size: 15px;
+    padding-bottom: 4px;
+  }
+  
+  &__city {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  
+  &__title {
+    font-size: 14px;
+    margin-left: 15px;
+    padding-top: 15px;
+    max-width: 200px;
+  }
+  
+  &__insta-logo {
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+  }
+  
+  &__rose {
+    @include aspect-ratio(89, 82);
+    width: 89px;
+    margin: 50px auto;
+  }
+}
