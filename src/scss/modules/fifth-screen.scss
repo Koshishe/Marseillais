@@ -39,11 +39,17 @@
     position: relative;
     margin-bottom: 30px;
     overflow: hidden;
+    cursor: pointer;
   
     &:hover {
       .fifth-screen__insta-info {
         transform: translateY(0);
       }
+    }
+    
+    @include mobile() {
+      flex-basis: 320px;
+      min-height: 320px;
     }
   }
   
