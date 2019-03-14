@@ -22,7 +22,7 @@
     width: 254px;
     position: absolute;
     left: 59px;
-    top: -130px;
+    top: 240px;
     background-size: contain;
     
     @include tablet-only() {
@@ -40,10 +40,12 @@
     background-size: contain;
     position: absolute;
     left: 0;
-    top: 95px;
+    top: 900px;
+    z-index: 5;
     
     @include tablet-only() {
       width: 100px;
+      top: 640px;
     }
     
     @include mobile() {

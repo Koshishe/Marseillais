@@ -133,10 +133,11 @@
     @include aspect-ratio(177,106);
     left: 0;
     width: 177px;
-    top: 100px;
+    top: 400px;
     
     @include tablet-only() {
       width: 127px;
+      top: 290px;
     }
     
     @include mobile() {
@@ -149,7 +150,7 @@
     @include aspect-ratio(306, 460);
     right: 0;
     width: 306px;
-    top: 495px;
+    top: 650px;
     
     @include tablet-only() {
       width: 160px;

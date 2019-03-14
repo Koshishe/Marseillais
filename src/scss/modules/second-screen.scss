@@ -124,10 +124,11 @@
     @include aspect-ratio(186,259);
     left: 0;
     width: 186px;
-    top: 564px;
+    top: 784px;
     
     @include tablet-only() {
       width: 125px;
+      top: 640px;
     }
     
     @include mobile() {
@@ -143,7 +144,7 @@
     
     @include tablet-only() {
       width: 188px;
-      top: 210px;
+      top: 270px;
     }
     
     @include mobile() {
