@@ -7,7 +7,7 @@ const errorHandler = require('./util/handle-errors');
 
 const srcPath = 'src';
 
-const devPath = 'build';
+const devPath = 'docs';
 const prodPath = devPath;
 
 let destPath = null;
