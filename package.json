@@ -67,7 +67,7 @@
     "gulp-util": "^3.0.8",
     "imagemin-jpeg-recompress": "^5.1.0",
     "imagemin-pngquant": "^5.0.1",
-    "node-sass": "^4.7.2",
+    "node-sass": "^7.0.0",
     "postcss-csso": "^3.0.0",
     "require-dir": "^0.3.2",
     "require-yaml": "^0.0.1",
